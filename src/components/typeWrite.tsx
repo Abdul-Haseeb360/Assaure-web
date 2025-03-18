@@ -10,7 +10,7 @@ export function TypewriterEffectSmoothDemo() {
     },
     {
       text: "with Assure!🚀",
-      className: "text-blue-500 text-primery-green",
+      className: "text-blue-500 text-primary-green",
     },
   ];
   return (

@@ -3,28 +3,18 @@ export const siteConfig = {
   description: "Empowering Businesses with Ethical, Safe, and Sustainable Practices",
   url: "https://assure.com",
   ogImage: "https://assure.com/og.jpg",
-  links: {
-    twitter: "https://twitter.com/yourusername",
-    github: "https://github.com/yourusername",
+  contact: {
+    phone: "+92 42 35249499",
+    email: "usmanjavaid@assure-int.com",
   },
-  nav: [
-    {
-      title: "Home",
-      href: "/",
+  offices: {
+    canada: {
+      address: "4063 Buckstone Road, StoneRidge - V9N0B3, Courtenay, BC, Canada",
     },
-    {
-      title: "About",
-      href: "/about",
+    pakistan: {
+      address: "12/A AA Commercial Sector D, Canal Road, Bahria Town, Lahore",
     },
-    {
-      title: "Blog",
-      href: "/blog",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-    },
-  ],
+  },
 } as const
 
 export type SiteConfig = typeof siteConfig
