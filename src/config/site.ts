@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Assure",
   description: "Empowering Businesses with Ethical, Safe, and Sustainable Practices",
-  url: "https://assure.com",
+  url: "https://assure-int.com",
   ogImage: "https://assure.com/og.jpg",
   contact: {
     phone: "+92 42 35249499",
