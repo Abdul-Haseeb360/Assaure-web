@@ -1,7 +1,6 @@
 import React from "react";
 import { whyUs } from "@/constant/data";
 import Image from "next/image";
-import { Container } from "./Container";
 function TrustSection() {
   return (
     // <Container>
@@ -32,7 +31,7 @@ function TrustSection() {
         <div className="flex gap-8">
           {whyUs.map((choose, index) => (
             <div key={index}>
-              <img
+              <Image
                 src={choose.image}
                 alt={choose.title}
                 width={75}

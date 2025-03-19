@@ -8,16 +8,13 @@ import NewsEvents from "@/components/News&Events";
 export default function Home() {
   return (
     <>
-      <div className="lg:mx-20">{/* <HeroSection/> */}</div>
       <Navbar />
       <SolutionsProvider />
-        <GlobalStander />
-        <TrustSection />
-        <NewsEvents/>
-        {/* <TypewriterEffectSmoothDemo /> */}
-        <Consultation />
-        <Footer />
-     
+      <GlobalStander />
+      <TrustSection />
+      <NewsEvents />
+      <Consultation />
+      <Footer />
     </>
   );
 }
