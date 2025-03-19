@@ -2,6 +2,7 @@ import React from "react";
 import { whyUs } from "@/constant/data";
 import Image from "next/image";
 import { Container } from "./Container";
+
 function TrustSection() {
   return (
     <div className="bg-[#F9F9F9]">

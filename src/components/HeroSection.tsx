@@ -2,8 +2,9 @@ import React from "react";
 import { Button } from "./ui/button";
 import { getHeroBanner } from "@/lib/actions/fetchHeroBanner";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import { BannerItem } from "@/types/type";
 async function HeroSection() {
-  const banner = await getHeroBanner();
+  const banner:BannerItem[] = await getHeroBanner();
 
   if (!banner || banner.length === 0) {
     return <p>no banner found</p>;
@@ -13,8 +14,8 @@ async function HeroSection() {
     <div className="">
       <Carousel>
         <CarouselContent>
-          {banner.map((items: any) => (
-            <CarouselItem>
+          {banner.map((items) => (
+            <CarouselItem key={items._id}>
               <div
                 key={items._id}
                 className="relative text-white  pt-32 md:pt-48"
