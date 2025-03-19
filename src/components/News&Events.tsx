@@ -18,7 +18,7 @@ export default function NewsEvents() {
             </h2>
             <p className="mt-4 font-normal text-lg font-montserrat">
               From industry updates to key milestones and upcoming events,
-              explore what's <br /> happening at ASSURE.
+              explore what&apos;s <br /> happening at ASSURE.
             </p>
           </div>
           <Link
