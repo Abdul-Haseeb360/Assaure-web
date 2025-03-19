@@ -5,16 +5,19 @@ import GlobalStander from "@/components/GlobalStandards";
 import TrustSection from "@/components/TrustSection";
 import Consultation from "@/components/Consultation";
 import NewsEvents from "@/components/News&Events";
+import { Container } from "@/components/Container";
 export default function Home() {
   return (
     <>
       <Navbar />
-      <SolutionsProvider />
-      <GlobalStander />
-      <TrustSection />
-      <NewsEvents />
-      <Consultation />
-      <Footer />
+      <Container>
+      </Container>
+        <SolutionsProvider />
+        <GlobalStander />
+        <TrustSection />
+        <NewsEvents />
+        <Consultation />
+        <Footer />
     </>
   );
 }

@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import hero from "../../Public/herosection.jpg";
-import Logo from "../../Public/Assure logo-01.png";
+import Logo from "../../public/assurelogo.png";
 import { navigation } from "@/constant/data";
 import HeroSection from "./HeroSection";
+import { Container } from "./Container";
 
 export default function Hero() {
   return (
     <div className="relative h-[711px]">
       {/* Background Image */}
+      <Container>
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[#06250FD4] " />
         <Image
@@ -19,7 +21,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative w-full container mx-auto ">
+      <div className="relative w-full ">
         <header className="absolute top-4  left-0 right-0 z-10 px-4 py-4 md:py-6 bg-white rounded-lg flex flex-col md:flex-row justify-between items-center">
           <div className="flex ">
             <Image src={Logo} alt="ASSURE logo icon" className="mr-6" />
@@ -45,6 +47,7 @@ export default function Hero() {
         </header>
         <HeroSection />
       </div>
+    </Container>
     </div>
   );
 }
