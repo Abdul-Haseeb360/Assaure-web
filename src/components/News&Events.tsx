@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { newsItems } from "@/constant/data";
-import newsinsight from "../../Public/newsinsight.png";
 import { Container } from "./Container";
 
 export default function NewsEvents() {
@@ -34,7 +33,7 @@ export default function NewsEvents() {
           <div className="bg-white rounded-md overflow-hidden">
             <div className="relative h-60 w-full">
               <Image
-                src={newsinsight}
+                src="/newsinsight.png"
                 alt="SBTi Awareness Session"
                 fill
                 className="object-cover rounded-lg"
