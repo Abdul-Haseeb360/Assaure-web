@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../Public/Assure logo-01.png";
-import { siteConfig,  } from "@/config/site";
+import Logo from "../../public/assurelogo.png";
+import { siteConfig } from "@/config/site";
+import { Container } from "./Container";
 function Footer() {
   return (
     <footer className=" ">
-      <div className="container mx-auto px-6 py-12 font-montserrat">
+      <Container>
+
+     
+      <div className="py-12 font-montserrat">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo and Tagline Section */}
           <div className=" ">
@@ -103,7 +107,7 @@ function Footer() {
                   href="tel:+924235249499"
                   className="hover:text-black text-tertiary-gray transition-colors"
                 >
-                 {siteConfig.contact.phone}
+                  {siteConfig.contact.phone}
                 </a>
               </li>
               <li>
@@ -115,14 +119,10 @@ function Footer() {
                 </a>
               </li>
               <li className="pt-4 hover:text-black text-tertiary-gray ">
-                <p className="text-sm">
-                 {siteConfig.offices.canada.address}
-                </p>
+                <p className="text-sm">{siteConfig.offices.canada.address}</p>
               </li>
               <li className="pt-4 hover:text-black text-tertiary-gray ">
-                <p className="text-sm">
-                  {siteConfig.offices.pakistan.address}
-                </p>
+                <p className="text-sm">{siteConfig.offices.pakistan.address}</p>
               </li>
             </ul>
           </div>
@@ -144,6 +144,7 @@ function Footer() {
           </Link>
         </div>
       </div>
+      </Container>
     </footer>
   );
 }

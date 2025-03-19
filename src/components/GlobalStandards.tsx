@@ -1,10 +1,12 @@
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { services } from "@/constant/data";
+import { Container } from "./Container";
 
-export default function Home() {
+export default function GlobalStandards() {
   return (
-    <main className="container mx-auto">
+    <Container>
+    <main className="">
       <section className="py-12">
         <h2 className="text-[32px] font-plusJakarta leading-[100%] font-medium mb-6 text-secondary-gray">
           Helping You Meet{" "}
@@ -41,5 +43,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </Container>
   );
 }

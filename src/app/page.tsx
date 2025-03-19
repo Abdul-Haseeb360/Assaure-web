@@ -5,19 +5,19 @@ import GlobalStander from "@/components/GlobalStandards";
 import TrustSection from "@/components/TrustSection";
 import Consultation from "@/components/Consultation";
 import NewsEvents from "@/components/News&Events";
+import { Container } from "@/components/Container";
 export default function Home() {
   return (
     <>
-      <div className="lg:mx-20">{/* <HeroSection/> */}</div>
       <Navbar />
-      <SolutionsProvider />
+      <Container>
+      </Container>
+        <SolutionsProvider />
         <GlobalStander />
         <TrustSection />
-        <NewsEvents/>
-        {/* <TypewriterEffectSmoothDemo /> */}
+        <NewsEvents />
         <Consultation />
         <Footer />
-     
     </>
   );
 }
