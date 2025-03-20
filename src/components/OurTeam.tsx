@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "./Container";
-import Image from "next/image";
 
 function OurTeam() {
   return (
