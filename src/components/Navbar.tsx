@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navigation } from "@/constant/data";
-import HeroSection from "./HeroSection";
 import { Container } from "./Container";
 import HeroSectionWrapper from "./HeroSectionWrapper";
 

@@ -7,13 +7,14 @@ import Autoplay from "embla-carousel-autoplay";
 import { HeroSectionProps } from "@/types/type";
 
 const HeroSection: React.FC<HeroSectionProps> = ({ banner }) => {
-  if (!banner || banner.length === 0) {
-    return <p className="min-h-full mx-auto text-center">No banner found</p>;
-  }
 
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
+
+  if (!banner || banner.length === 0) {
+    return <p className="min-h-full mx-auto text-center">No banner found</p>;
+  }
 
   return (
     <div className="">
