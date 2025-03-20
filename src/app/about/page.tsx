@@ -5,6 +5,7 @@ import AboutHeroSection from '@/components/AboutHeroSection'
 import SolutionsProvider from '@/components/SolutionsProvider'
 import Consultation from '@/components/Consultation'
 import OurPhilosphy from '@/components/OurPhilosphy'
+import OurTeam from '@/components/OurTeam'
 function page() {
   return (
     <div>
@@ -12,6 +13,7 @@ function page() {
         <AboutHeroSection/>
         <SolutionsProvider showLearnMoreButton={false} />
         <OurPhilosphy/>
+        <OurTeam/>
         <Consultation/>
         <Footer/>
     </div>
