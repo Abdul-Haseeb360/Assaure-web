@@ -42,7 +42,7 @@ function TrustSection() {
                 <h1 className="text-[24px] leading-[24px] font-plusJakarta font-semibold pb-4 mt-2">
                   {choose.title}
                 </h1>
-                <p className="font-normal font-montserrat text-lg pb-[91px]">
+                <p className="font-normal font-montserrat text-base pb-[91px]">
                   {choose.description}
                 </p>
               </div>

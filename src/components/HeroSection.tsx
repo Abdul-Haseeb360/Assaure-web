@@ -1,18 +1,29 @@
-import React from "react";
-import { Button } from "./ui/button";
-import { getHeroBanner } from "@/lib/actions/fetchHeroBanner";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
-import { BannerItem } from "@/types/type";
-async function HeroSection() {
-  const banner:BannerItem[] = await getHeroBanner();
+"use client";
 
+import React, { useState } from "react";
+import { Button } from "./ui/button";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { HeroSectionProps } from "@/types/type";
+
+const HeroSection: React.FC<HeroSectionProps> = ({ banner }) => {
   if (!banner || banner.length === 0) {
-    return <p>no banner found</p>;
+    return <p className="min-h-screen mx-auto text-center">No banner found</p>;
   }
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: false })
+  );
 
   return (
     <div className="">
-      <Carousel>
+      <Carousel
+        plugins={[plugin.current]}
+        className="w-full "
+        opts={{ loop: true, duration: 50 }}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+      >
         <CarouselContent>
           {banner.map((items) => (
             <CarouselItem key={items._id}>
@@ -43,7 +54,6 @@ async function HeroSection() {
       </Carousel>
     </div>
   );
-}
+};
 
 export default HeroSection;
-

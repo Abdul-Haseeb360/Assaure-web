@@ -17,7 +17,7 @@ export default function Home() {
               </h1>
               <Link
                 href="#"
-                className="inline-block mt-4 font-montserrat text-gray-800 hover:border-b-2 border-primary-green pb-1 font-medium"
+                className="inline-block mt-4 font-montserrat text-secondary-gray border-b-2 border-transparent hover:border-b-2 hover:border-primary-green pb-1 transition-colors duration-400 font-medium"
               >
                 Learn more
               </Link>

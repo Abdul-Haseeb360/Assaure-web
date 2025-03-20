@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navigation } from "@/constant/data";
-import HeroSection from "./HeroSection";
 import { Container } from "./Container";
+import HeroSectionWrapper from "./HeroSectionWrapper";
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
             src="/herosection.jpg"
             alt=""
             priority
-            className="self-stretch  z-10 w-full h-full"
+            className="self-stretch z-10 w-full h-full"
             width={1440}
             height={711}
           />
@@ -51,7 +51,7 @@ export default function Hero() {
               Contact now
             </Link>
           </header>
-          <HeroSection />
+          <HeroSectionWrapper />
         </div>
       </Container>
     </div>
