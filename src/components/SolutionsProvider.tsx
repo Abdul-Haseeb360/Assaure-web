@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { Container } from "./Container";
-export default function Home() {
+import { SolutionProviderProps } from "@/types/type";
+export default function SolutionsProvider({
+  showLearnMoreButton = true,
+}: SolutionProviderProps) {
   return (
     <Container>
       <main className="">
@@ -15,12 +18,14 @@ export default function Home() {
                 <br />
                 Solutions Provider
               </h1>
-              <Link
-                href="#"
-                className="inline-block mt-4 font-montserrat text-gray-800 hover:border-b-2 border-primary-green pb-1 font-medium"
-              >
-                Learn more
-              </Link>
+              {showLearnMoreButton && (
+                <Link
+                  href="#"
+                  className="inline-block mt-4 font-montserrat text-gray-800 border-b-2 border-transparent hover:border-b-2 transition-colors duration-700 hover:border-primary-green pb-1 font-medium"
+                >
+                  Learn more
+                </Link>
+              )}
             </div>
             <div className="md:w-2/3">
               <p className="text-[#232323] text-[20px] font-montserrat leading-8 not-italic font-normal">

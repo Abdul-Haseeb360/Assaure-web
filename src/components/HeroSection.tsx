@@ -1,18 +1,28 @@
+"use client";
+
 import React from "react";
 import { Button } from "./ui/button";
-import { getHeroBanner } from "@/lib/actions/fetchHeroBanner";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
-import { BannerItem } from "@/types/type";
-async function HeroSection() {
-  const banner:BannerItem[] = await getHeroBanner();
+import Autoplay from "embla-carousel-autoplay";
+import { HeroSectionProps } from "@/types/type";
 
+const HeroSection: React.FC<HeroSectionProps> = ({ banner }) => {
   if (!banner || banner.length === 0) {
-    return <p>no banner found</p>;
+    return <p className="min-h-full mx-auto text-center">No banner found</p>;
   }
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
 
   return (
     <div className="">
-      <Carousel>
+      <Carousel
+        plugins={[plugin.current]}
+        className="w-full "
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+      >
         <CarouselContent>
           {banner.map((items) => (
             <CarouselItem key={items._id}>
@@ -43,7 +53,6 @@ async function HeroSection() {
       </Carousel>
     </div>
   );
-}
+};
 
 export default HeroSection;
-

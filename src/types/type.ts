@@ -6,3 +6,11 @@ export interface BannerItem {
       buttonText: string;
     };
   }
+
+export interface HeroSectionProps {
+  banner: BannerItem[];
+}
+
+export interface SolutionProviderProps {
+  showLearnMoreButton?: boolean
+}

@@ -23,7 +23,7 @@ export default function NewsEvents() {
           </div>
           <Link
             href="#"
-            className="mt-4 md:mt-0 text-secondary-gray font-montserrat font-medium  text-base hover:border-b-2  border-primary-green pb-1"
+            className="mt-4 md:mt-0 text-secondary-gray font-montserrat font-medium text-base border-b-2 border-transparent hover:border-b-2 transition-colors duration-700 hover:border-primary-green pb-1"
           >
             Explore all news & events
           </Link>
@@ -54,7 +54,7 @@ export default function NewsEvents() {
               </p>
               <Link
                 href="#"
-                className="text-secondary-gray hover:border-b-2 font-montserrat border-primary-green pb-1 text-base font-medium inline-block"
+                className="text-secondary-gray  font-montserrat border-b-2 border-transparent hover:border-b-2 transition-colors duration-700 hover:border-primary-green  pb-1 text-base font-medium inline-block"
               >
                 View
               </Link>
@@ -74,7 +74,7 @@ export default function NewsEvents() {
                 <p className=" my-2 font-normal text-base">{item.title}</p>
                 <Link
                   href={item.link}
-                  className="text-gray-800 hover:border-b-2 border-primary-green pb-1 font-medium inline-block"
+                  className="text-gray-800 border-b-2 border-transparent hover:border-b-2 transition-colors duration-700 hover:border-primary-green pb-1 font-medium inline-block"
                 >
                   Read news
                 </Link>

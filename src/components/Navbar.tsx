@@ -3,6 +3,7 @@ import Link from "next/link";
 import { navigation } from "@/constant/data";
 import HeroSection from "./HeroSection";
 import { Container } from "./Container";
+import HeroSectionWrapper from "./HeroSectionWrapper";
 
 export default function Hero() {
   return (
@@ -37,7 +38,7 @@ export default function Hero() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-base font-medium text-gray-700 hover:text-gray-900"
+                  className="font-montserrat text-[14px] leading-[30px] font-normal"
                 >
                   {item.name}
                 </Link>
@@ -51,7 +52,7 @@ export default function Hero() {
               Contact now
             </Link>
           </header>
-          <HeroSection />
+          <HeroSectionWrapper />
         </div>
       </Container>
     </div>
