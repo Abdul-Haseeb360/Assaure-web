@@ -15,7 +15,7 @@ export default function Hero() {
             src="/herosection.jpg"
             alt=""
             priority
-            className="self-stretch  z-10 w-full h-full"
+            className="self-stretch z-10 w-full h-full"
             width={1440}
             height={711}
           />

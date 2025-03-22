@@ -6,16 +6,25 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { HeroSectionProps } from "@/types/type";
 
+// const HeroSection: React.FC<HeroSectionProps> = ({ banner }) => {
+
+// const plugin = React.useRef(
+//   Autoplay({ delay: 2000, stopOnInteraction: true })
+// );
+
+// import React, { useState } from "react";
+// import { Button } from "./ui/button";
+// import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+// import Autoplay from "embla-carousel-autoplay";
+// import { HeroSectionProps } from "@/types/type";
+
 const HeroSection: React.FC<HeroSectionProps> = ({ banner }) => {
-
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false })
   );
-
   if (!banner || banner.length === 0) {
     return <p className="min-h-full mx-auto text-center">No banner found</p>;
   }
-
   return (
     <div className="">
       <Carousel
