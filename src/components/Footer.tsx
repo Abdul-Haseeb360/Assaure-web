@@ -11,11 +11,10 @@ function Footer() {
             {/* Logo and Tagline Section */}
             <div className=" ">
               <Image
-                src="/assurelogo.png"
+                src="/assure-logo.svg"
                 alt="Assure Logo"
                 width={200}
                 height={60}
-                // className="h-auto w-auto"
               />
               <p className="mt-4 text-sm leading-relaxed text-tertiary-gray">
                 Your Assurance Partner in Human Rights Safety, Health &
@@ -128,19 +127,30 @@ function Footer() {
           </div>
 
           {/* Bottom Links */}
-          <div className="mt-12 pt-8 border-t border-[#CACACA] flex justify-end space-x-6">
-            <Link
-              href="/privacy-policy"
-              className="text-sm hover:text-black text-[#9A9A9A] transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms-condition"
-              className="text-sm hover:text-black text-[#9A9A9A] transition-colors"
-            >
-              Terms & Condition
-            </Link>
+          <div className="mt-12 pt-8 border-t border-[#CACACA] flex justify-between space-x-6">
+            <div className="text-sm text-[#9A9A9A] ">
+              © {new Date().getFullYear()} ASSURE International - Developed by{" "}
+              <Link
+                href="https://www.configlabs.co/"
+                className="font-semibold cursor-pointer"
+              >
+                Configlabs
+              </Link>
+            </div>
+            <div className="flex space-x-6">
+              <Link
+                href="/privacy-policy"
+                className="text-sm hover:text-black text-[#9A9A9A] transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms-condition"
+                className="text-sm hover:text-black text-[#9A9A9A] transition-colors"
+              >
+                Terms & Condition
+              </Link>
+            </div>
           </div>
         </div>
       </Container>

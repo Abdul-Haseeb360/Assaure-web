@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Montserrat, Plus_Jakarta_Sans } from "next/font/google"
-
-
+import { Montserrat, Plus_Jakarta_Sans } from "next/font/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-montserrat", // Define a CSS variable for usage
+  variable: "--font-montserrat",
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta", // Define a CSS variable for usage
+  variable: "--font-plus-jakarta",
 });
 
 export const metadata: Metadata = {

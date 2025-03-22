@@ -6,7 +6,7 @@ function OurPhilosphy() {
   return (
     <div>
       <Container>
-        <div className="">
+        <div className="justify-center">
           <h1 className="font-medium text-center mt-32 text-[32px] leading-[100%] font-plusJakarta text-secondary-gray">
             Our
             <span className="font-bold text-[32px] leading-[100%] font-plusJakarta text-primary-green">
@@ -19,7 +19,7 @@ function OurPhilosphy() {
             alt=" "
             width={704}
             height={704}
-            className="mx-[311px] "
+            className="mx-auto"
           />
           <p className="font-montserrat font-normal text-[28px] leading-[42px] text-[#232323] pb-28 max-w-5xl">
             We believe that businesses have a responsibility to their employees,
